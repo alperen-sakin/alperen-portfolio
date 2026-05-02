@@ -1,13 +1,11 @@
 "use client";
-import { NAV_ITEMS } from "@/constants";
+import { ROUTES } from "@/constants";
 import { motion } from "framer-motion";
 import { ChevronRight, Mail } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
-  const projects = NAV_ITEMS.find((item) => item.id === "projects")!;
-  const contact = NAV_ITEMS.find((item) => item.id === "contact")!;
   return (
     <section>
       <div className="min-h-screen flex items-center justify-center relative pt-20 px-6">
@@ -63,7 +61,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <Link
-              href={projects.href}
+              href={ROUTES.projects}
               className="group relative text-slate-900 px-8 py-4 font-semibold rounded-full hover:bg-teal-400 bg-teal-500 transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(20,184,166,0.4)] hover:shadow-[0_0_30px_rgba(20,184,166,0.6)] hover:-translate-y-1"
             >
               View Projects
@@ -71,7 +69,7 @@ const Hero = () => {
             </Link>
 
             <Link
-              href={contact.href}
+              href={ROUTES.contact}
               className="group px-8 py-4 bg-transparent border-2 border-teal-500/50 hover:border-teal-400 text-teal-300 font-semibold rounded-full transition-all duration-300 flex items-center gap-2 hover:bg-teal-500/10 hover:shadow-[0_0_20px_rgba(20,184,166,0.2)] hover:-translate-y-1"
             >
               Contact Me
