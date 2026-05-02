@@ -28,7 +28,7 @@ const Navbar = () => {
           {NAV_ITEMS.map((item) => (
             <li
               key={item.id}
-              className="relative text-gray-400 hover:text-teal-300 transition-colors duration-300 font-medium tracking-wide group"
+              className="relative text-2xl text-gray-400 hover:text-teal-300 transition-colors duration-300 font-medium tracking-wide group"
             >
               <Link href={item.href}>{item.title}</Link>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-400 group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(20,184,166,0.8)]"></span>
