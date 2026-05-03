@@ -3,7 +3,6 @@ import { ROUTES } from "@/constants";
 import { motion } from "framer-motion";
 import { ChevronRight, Mail } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 const Hero = () => {
   return (
