@@ -7,7 +7,7 @@ import { GithubIcon } from "../icons/GithubIcon";
 
 const ProjectsSection = () => {
   return (
-    <section className="py-24 px-6 relative z-10">
+    <section id="projects" className="py-24 px-6 relative z-10">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
 

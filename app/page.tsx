@@ -3,7 +3,7 @@ import ProjectsSection from "@/components/projectsSection/ProjectsSection";
 
 const page = () => {
   return (
-    <div>
+    <div className="relative">
       <Hero />
       <ProjectsSection />
     </div>

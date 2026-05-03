@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
         <div className="flex items-center">
           <Link
-            href="/"
+            href="#hero"
             className="flex items-center gap-3 group relative z-50"
           >
             <div className="absolute inset-0 bg-teal-400/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 + index * 0.1 }}
                     key={item.id}
-                    href={`#${item.href.toLowerCase()}`}
+                    href={`${item.href}`}
                     onClick={() => setIsOpen(false)}
                     className="text-gray-300 hover:text-teal-300 text-lg font-medium tracking-wide transition-colors relative group"
                   >

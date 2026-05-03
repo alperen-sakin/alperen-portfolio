@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section>
+    <section id="hero">
       <div className="min-h-screen flex items-center justify-center relative pt-20 px-6">
         <div className="max-w-4xl mx-auto text-center z-10">
           {/* Animated Welcome Message */}

@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-(--background-color)">
+      <body className="min-h-screen flex flex-col bg-(--background-color) font-sans selection:bg-teal-500/30 selection:text-teal-200">
         <Sparkles />
         <Navbar />
         {children}
