@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "../icons/GithubIcon";
+import ProjectCard from "./ProjectCard";
+import { PROJECTS } from "@/constants";
 
 const ProjectsSection = () => {
+  const projects = PROJECTS;
   return (
     <section id="projects" className="py-24 px-6 relative z-10">
       <div className="max-w-6xl mx-auto">
@@ -39,6 +42,14 @@ const ProjectsSection = () => {
             <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </Link>
         </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Example Project Cards */}
+
+          {PROJECTS.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
+          ))}
+        </div>
       </div>
     </section>
   );
