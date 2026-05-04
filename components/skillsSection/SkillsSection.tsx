@@ -6,7 +6,7 @@ import SkillCard from "./SkillCard";
 
 const SkillsSection = () => {
   return (
-    <section className="py-24 px-6 relative z-10 bg-[#0a0f18]/50">
+    <section id="skills" className="py-24 px-6 relative z-10 bg-[#0a0f18]/50">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
