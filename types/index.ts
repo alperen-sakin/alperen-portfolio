@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 export interface Project {
   id: number;
   title: string;
@@ -6,4 +8,11 @@ export interface Project {
   tags: string[];
   githubUrl: string;
   liveUrl?: string;
+}
+
+export interface Skill {
+  id: number;
+  icon: LucideIcon;
+  title: string;
+  skillNames: string[];
 }

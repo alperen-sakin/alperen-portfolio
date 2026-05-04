@@ -1,4 +1,12 @@
-import { Project } from "@/types";
+import { Project, Skill } from "@/types";
+import {
+  Smartphone,
+  Layers,
+  Database,
+  Code2,
+  Monitor,
+  Blocks,
+} from "lucide-react";
 
 export const NAV_ITEMS = [
   { id: "projects", title: "Projects", href: "#projects" },
@@ -43,5 +51,56 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1738563710982-6ebe69cd5b6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBtb2NrdXAlMjBkYXJrfGVufDF8fHx8MTc3MzE2MDQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["Kotlin", "Jetpack Compose", "Firebase", "WorkManager"],
     githubUrl: "https://github.com/user/taskflow-pro",
+  },
+];
+
+export const SKILLS: Skill[] = [
+  {
+    id: 1,
+    title: "Core Android",
+    icon: Smartphone,
+    skillNames: ["Kotlin", "Android SDK", "Coroutines", "Flow"],
+  },
+  {
+    id: 2,
+    title: "Frontend (Next.js)",
+    icon: Monitor,
+    skillNames: [
+      "Next.js 14+",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+  },
+  {
+    id: 3,
+    title: "Android UI/UX",
+    icon: Layers,
+    skillNames: ["Jetpack Compose", "XML", "Material Design 3", "Custom Views"],
+  },
+  {
+    id: 4,
+    title: "Web Ecosystem",
+    icon: Blocks,
+    skillNames: ["Redux / Zustand", "React Query", "Shadcn UI", "Lucide Icons"],
+  },
+  {
+    id: 5,
+    title: "Architecture & State",
+    icon: Code2,
+    skillNames: ["MVVM (Android)", "MVI", "Clean Architecture", "Dagger Hilt"],
+  },
+  {
+    id: 6,
+    title: "Backend & Database",
+    icon: Database,
+    skillNames: [
+      "Room / SQLite",
+      "Supabase",
+      "Firebase",
+      "RESTful APIs",
+      "GraphQL",
+    ],
   },
 ];
